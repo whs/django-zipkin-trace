@@ -12,7 +12,7 @@ setup(
     include_package_data=True,
     install_requires=[
         'Django',
-        'py-zipkin==0.9.0',
+        'py_zipkin==0.9.0',
         'requests-futures==0.9.7',
     ],
     classifiers=[
