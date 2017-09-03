@@ -31,8 +31,8 @@ class ZipkinMiddleware(object):
 				timeout=0.3,
 			)
 			self.logger.debug('Submitted trace')
-		except: # pylint: disable=W0702
-			self.logger.warning('Cannot submit trace')
+		except Exception as e: # pylint: disable=W0702
+			self.logger.warning('Cannot submit trace', exc_info=e)
 
 	def __call__(self, request):
 		with zipkin_span(**self.get_zipkin_args(request)) as span:
