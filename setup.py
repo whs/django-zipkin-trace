@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='django-zipkin-trace',
-    version='1.0.1',
+    version='1.0.2',
     url='https://github.com/whs/django-zipkin-trace',
     author='Manatsawin Hanmongkolchai',
     author_email='manatsawin+pypi@gmail.com',
@@ -12,7 +12,7 @@ setup(
     include_package_data=True,
     install_requires=[
         'Django',
-        'py_zipkin==0.9.0',
+        'py_zipkin==0.11.0',
         'requests-futures==0.9.7',
     ],
     classifiers=[
