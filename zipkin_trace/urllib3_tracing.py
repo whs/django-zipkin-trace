@@ -1,4 +1,7 @@
-import urllib.parse
+try:
+    from urllib.parse import urlparse
+except ImportError:
+     from urlparse import urlparse
 
 from django.conf import settings
 from urllib3.connectionpool import HTTPConnectionPool, HTTPSConnectionPool
