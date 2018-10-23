@@ -1,5 +1,7 @@
 # Django-zipkin-trace
 
+**DEPRECATED**: Please use [opencensus-python](https://github.com/census-instrumentation/opencensus-python) for a replacement
+
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![PyPi](https://img.shields.io/pypi/v/django-zipkin-trace.svg)](https://pypi.python.org/pypi/django-zipkin-trace)
 
